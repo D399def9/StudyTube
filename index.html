@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StudyTube</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>📘 StudyTube</h1>
+  <p>Focus. Study. Repeat.</p>
+
+  <div class="timer">
+    <h2 id="time">25:00</h2>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+
+  <div class="notes">
+    <h3>Study Notes</h3>
+    <textarea id="notes" placeholder="Write what you study..."></textarea>
+    <button onclick="saveNotes()">Save Notes</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
