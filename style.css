@@ -87,3 +87,9 @@ work-space {
   border-color:black;
 
 }
+.inspiring-quote {
+  font-style: italic;
+  font-size: 18px;
+  margin: 20px 0;
+  color: #2c3e50;
+}
