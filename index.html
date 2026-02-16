@@ -4,22 +4,25 @@
   <meta charset="UTF-8" />
   <title>StudyTube</title>
   <link rel="stylesheet" href="style.css" />
-   <h1>📘 StudyTube</h1>
 </head>
 <body>
+<h1>📘 StudyTube</h1>
   <p>Hey there 👋, let me help you study effectively!</p>
 
-  <div class="timer">
+  <div class="Focused-Timer">
     <h2 id="time">25:00</h2>
     <button onclick="startTimer()">Start</button>
     <button onclick="resetTimer()">Reset</button>
   </div>
 
-  <div class="notes">
-    <h3>Study Notes</h3>
-    <textarea id="notes" placeholder="Write what you study..."></textarea>
-    <button onclick="saveNotes()">Save Notes</button>
-  </div>
+  <div class="video-container">
+  <h2>Add video link</h2>
+
+  <input type="text" id="videoLink" placeholder="Paste YouTube URL">
+  <button id="addBtn">Add Video</button>
+</div>
+
+<div id="videoArea"></div>
 
   <script src="script.js"></script>
 </body>

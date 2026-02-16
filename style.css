@@ -6,20 +6,30 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 30px;
+  position:center;
+  top:10px;
 }
 
-.timer {
-  background: white;
-  padding: 20px;
-  margin: 20px auto;
-  width: 300px;
+.Focused-Timer {
+  position: fixed; /* makes it stay on screen */
+  top: 10px;       /* distance from top */
+  left: 10px;
+  background-color: #f4f6fa;
+  width: 200px;
+  height: 100px;
+  border: 2px solid rgb(33, 6, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
+  
 }
 
 #time {
-  font-size: 48px;
-  margin: 10px 0;
+  font-size: 15px;
+  margin: 0px 0;
 }
 
 button {
@@ -44,4 +54,25 @@ textarea {
   width: 300px;
   height: 120px;
   padding: 10px;
+}
+#videoArea iframe {
+  width: 100%;         /* takes full width of parent */
+  max-width: 900px;    /* max width you want */
+  height: 500px;       /* fixed height, or you can make responsive too */
+  display: block;
+  margin: 20px auto;   /* center horizontally */
+  border: none;
+}
+
+/* Optional: make height responsive too */
+@media (max-width: 1000px) {
+  #videoArea iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  #videoArea iframe {
+    height: 200px;
+  }
 }
