@@ -1,6 +1,5 @@
 // Wait for the page to load
 document.addEventListener("DOMContentLoaded", () => {
-  // Video Add Button
   const addButton = document.getElementById("addBtn");
   if (addButton) {
     addButton.addEventListener("click", addVideo);
@@ -20,14 +19,11 @@ function addVideo() {
     return;
   }
 
-  let embedLink = `https://www.youtube.com/embed/${videoId}`;
+  // Save current timer state to localStorage
+  localStorage.setItem('remainingTime', time);
 
-  // Add the video iframe (CSS will handle size)
-  document.getElementById("videoArea").innerHTML =
-    `<iframe src="${embedLink}" frameborder="0" allowfullscreen></iframe>`;
-
-  // Hide the input box container
-  document.querySelector('.video-container').style.display = 'none';
+  // Redirect to focused video page with video ID
+  window.location.href = `index2.html?video=${videoId}`;
 }
 
 function extractVideoID(url) {
